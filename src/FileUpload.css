@@ -1,0 +1,16 @@
+.circular-image {
+    width: 300px;
+    height: 300px; /* Adjust max-height as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: rgb(221, 138, 29);
+    border: 5px solid  rgb(221, 138, 29);
+}
+.circular-image:hover{
+    width: 700px;
+    height: 700px; /* Adjust max-height as needed */
+    border-radius: 0%;
+    overflow: hidden;
+    background-color: none;
+    border: none;
+}

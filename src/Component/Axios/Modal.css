@@ -1,0 +1,18 @@
+
+/* .styling
+{   align-items: center;
+    border: 2px solid rgba(218, 215, 215, 0.808);
+    background-color: white;
+    height: 200px;
+    width: 500px;
+    margin: 50px;   
+    margin-left: 30%;
+    
+    
+} */
+
+.modal-header,
+.modal-footer {
+  border: none; /* Remove borders from the header and footer */
+}   
+

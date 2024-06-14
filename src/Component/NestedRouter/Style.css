@@ -1,0 +1,25 @@
+.primary{
+    background-color: aliceblue;
+    padding:16px 32px ;
+    /* font-size: medium; */
+  }
+
+  .search{
+    color:red;
+    padding-left: 5px;
+    margin-left: 800px;
+    text-align: center;
+  }
+
+
+  nav,a{
+    margin-right: 16px;
+    font-size: medium;
+  }
+/*  Link are like a.href="" in react */
+
+
+  nav a.active{
+    text-decoration: none;   /* removes the underline of Home and About tag */
+    font-weight: bold;
+  }

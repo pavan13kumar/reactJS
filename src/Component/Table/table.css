@@ -1,0 +1,52 @@
+table,
+      th,
+      tr,
+      td {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #ddd; 
+        border-collapse: collapse;
+        /* border: 2px solid rgb(238, 172, 172); */
+        /* background-color: rgba(229, 241, 241, 0.685); */
+      }
+
+
+.Table {
+        width: 70%;
+    }
+    
+.archived-status{
+  background-color:#ffebe6;
+}
+
+
+.active-status{
+  background-color:#e9f8d9;
+}
+
+.green{
+  background-color: #bdfac6; /* Circle background color */
+}
+
+.red{
+ background-color: #fad8cb; /* Circle background color */
+}
+
+.yellow{
+ background-color: #e6ee7adc; /* Circle background color */
+}
+
+
+.green,.red,.yellow {
+  color: black; /* Circle text color */
+  border-radius: 60%; /* Make it circular */
+  width: 49px; /* Adjust the width and height as needed */
+  height: 30px;
+  text-align: center; /* Center the text vertically and horizontally */
+  line-height: 30px; /* Center the text vertically */
+  display: inline-grid;
+  border: 1px solid rgba(0, 0, 0, 0.226);
+}
+
+
+

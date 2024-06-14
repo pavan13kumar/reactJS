@@ -1,0 +1,14 @@
+.primary{
+    color: aqua;
+   
+}
+.font{
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.background{
+    background-color: black;
+}
+.logo{
+    background-image: url(./misc_new_database_93640.jpg);
+}

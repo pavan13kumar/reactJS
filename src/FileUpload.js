@@ -87,7 +87,7 @@ function FileUpload() {
             viewport: viewport,
         };
         await page.render(renderContext).promise;
-        const dataUrl = canvas.toDataURL();
+        const dataUrl = canvas.toDataURL(); // base64
         setFileURL(dataUrl);
         setDisplayUrl(base64data);
         const fileData = {

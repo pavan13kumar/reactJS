@@ -2,37 +2,37 @@ import React, { useReducer } from 'react'
 
 
 //»»»CASE 1:
-// const reducer = (state,action) => {
-//   switch (action) {
-//     case 'increment':
-//       return(state+1)
+const reducer = (state, action) => {
+  switch (action) {
+    case 'increment':
+      return (state + 1)
 
-//     case 'decrement':
-//       return(state-1)
-    
-//     case 'reset':
-//       return(initialState)
-    
-//     default:
-//       return(state)
-//   }
-// }
+    case 'decrement':
+      return (state - 1)
 
-// //  // Initial state(simple variable)
-// let initialState= 0;
+    case 'reset':
+      return (initialState)
 
-// function UseReduce() {
+    default:
+      return (state)
+  }
+}
 
-//   const [count, dispatch] = useReducer(reducer, initialState);
-//   return (
-//     <div>
-//       <p> Count - {count}</p>
-//       <button onClick={() => dispatch('increment')}>Increment</button>
-//       <button onClick={() => dispatch('decrement')}>Decrement</button>
-//       <button onClick={()=> dispatch('reset')}>Reset</button>
-//     </div>
-//   )
-// }
+//  // Initial state(simple variable)
+let initialState = 0;
+
+function UseReduce() {
+
+  const [count, dispatch] = useReducer(reducer, initialState);
+  return (
+    <div>
+      <p> Count - {count}</p>
+      <button onClick={() => dispatch('increment')}>Increment</button>
+      <button onClick={() => dispatch('decrement')}>Decrement</button>
+      <button onClick={() => dispatch('reset')}>Reset</button>
+    </div>
+  )
+}
 
 
 //»»» CASE 2: by making the action  Has a object
@@ -45,7 +45,7 @@ import React, { useReducer } from 'react'
 
 //     case "DECREMENT":
 //         return{count: state.count-1};
-        
+
 //     case "RESET":
 //         return {count: initialState.count};
 
@@ -58,7 +58,7 @@ import React, { useReducer } from 'react'
 // let initialState ={count:0}
 
 // function UseReduce() {
-  
+
 //   // Using useReducer with the reducer function and initial state
 //   const [state,dispatch] = useReducer(counterReducer, initialState);
 //   return (
@@ -81,7 +81,7 @@ import React, { useReducer } from 'react'
 
 //     case "DECREMENT":
 //         return{count: state.count- action.value};
-        
+
 //     case "RESET":
 //         return {count: initialState.count};
 
@@ -95,7 +95,7 @@ import React, { useReducer } from 'react'
 // let initialState ={count:0}
 
 // function UseReduce() {
-  
+
 //   // Using useReducer with the reducer function and initial state
 //   const [state,dispatch] = useReducer(counterReducer, initialState);
 //   console.log(state,dispatch)
@@ -144,7 +144,7 @@ import React, { useReducer } from 'react'
 // }
 
 // function UseReduce() {
-  
+
 //   // Using useReducer with the reducer function and initial state
 //   const [count,dispatch] = useReducer(counterReducer, initialState);
 
@@ -170,48 +170,48 @@ import React, { useReducer } from 'react'
 
 
 // // »»»CASE 5:  using multiple useReduce  methods
-const reducer = (state,action) => {
-  switch (action) {
-    case "increment":
-      return state + 1;
+// const reducer = (state,action) => {
+//   switch (action) {
+//     case "increment":
+//       return state + 1;
 
-    case "decrement":
-      return state - 1;
+//     case "decrement":
+//       return state - 1;
 
-    case "reset":
-      return initialState;
+//     case "reset":
+//       return initialState;
 
-    default:
-      return state;
-  }
-}
+//     default:
+//       return state;
+//   }
+// }
 
-//  Initial state(simple variable)
-let initialState= 0;
-  
-function UseReduce() {
+// //  Initial state(simple variable)
+// let initialState= 0;
 
-  const [count, dispatch] = useReducer(reducer, initialState);
-  //we can use same peice of code for multiple useReducer 
-  const [counterTwo, dispatchTwo] = useReducer(reducer, initialState);   // just the return types of the reducer has been changed
+// function UseReduce() {
 
-  return (
-    <div>
-      <p> CounterONE - {count}</p>
-      <button onClick={() => dispatch('increment')}>Increment</button>
-      <button onClick={() => dispatch('decrement')}>Decrement</button>
-      <button onClick={()=> dispatch('reset')}>Reset</button>
-      <hr/>
-      <div>
-      <p> CounterTWO - {counterTwo}</p>
-      <button onClick={() => dispatchTwo('increment')}>Increment</button>
-      <button onClick={() => dispatchTwo('decrement')}>Decrement</button>
-      <button onClick={()=> dispatchTwo('reset')}>Reset</button>
-      </div>
+//   const [count, dispatch] = useReducer(reducer, initialState);
+//   //we can use same peice of code for multiple useReducer 
+//   const [counterTwo, dispatchTwo] = useReducer(reducer, initialState);   // just the return types of the reducer has been changed
 
-    </div>
-  )
-}
+//   return (
+//     <div>
+//       <p> CounterONE - {count}</p>
+//       <button onClick={() => dispatch('increment')}>Increment</button>
+//       <button onClick={() => dispatch('decrement')}>Decrement</button>
+//       <button onClick={()=> dispatch('reset')}>Reset</button>
+//       <hr/>
+//       <div>
+//       <p> CounterTWO - {counterTwo}</p>
+//       <button onClick={() => dispatchTwo('increment')}>Increment</button>
+//       <button onClick={() => dispatchTwo('decrement')}>Decrement</button>
+//       <button onClick={()=> dispatchTwo('reset')}>Reset</button>
+//       </div>
+
+//     </div>
+//   )
+// }
 
 export default UseReduce
 

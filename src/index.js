@@ -50,7 +50,7 @@ root.render(
     {/* <ChariotLogin/> */}
     {/* <TimePic/> */}
     {/* <MapContainer/> */}
-    <App />,
+    {/* <App />, */}
     {/* <ClassComp />  */},
     {/* <FunctionComp/> */}
     {/* <Props name="swift" colour="white">
@@ -75,7 +75,7 @@ root.render(
     {/* <DataFetch/> */}
     {/* <UseContextHook/> */}
     {/* <UseRef/> */}
-    {/* <UseReduce/> */}
+    <UseReduce />
     {/* <Main/> */}
     {/* <Axios/> */}
     {/* <FetchDataWithUseState/> */}
